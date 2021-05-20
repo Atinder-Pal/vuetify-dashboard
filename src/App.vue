@@ -6,8 +6,13 @@
 			</v-card-title>
 			<v-card-text>
 				<v-form>
-					<v-text-field label="Username" />
-					<v-text-field label="Password" type="password" />
+					<v-text-field label="Username" prepend-icon="mdi-account-circle" />
+					<v-text-field
+						label="Password"
+						type="password"
+						prepend-icon="mdi-lock"
+						append-icon="mdi-eye-off"
+					/>
 				</v-form>
 			</v-card-text>
 			<v-card-actions>
