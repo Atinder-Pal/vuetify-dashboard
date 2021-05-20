@@ -1,5 +1,12 @@
 <template>
 	<v-app>
+		<v-app-bar app>
+			<v-toolbar-title>Vuetify Dashboard</v-toolbar-title>
+			<v-spacer></v-spacer>
+			<v-btn>Home</v-btn>
+			<v-btn>Login</v-btn>
+		</v-app-bar>
+		<!-- Login Module -->
 		<v-card width="400" class="mx-auto mt-5">
 			<v-card-title class="pb-5">
 				<h1 class="display-1">Login</h1>
@@ -11,7 +18,7 @@
 						label="Password"
 						:type="showPassword ? 'text' : 'password'"
 						prepend-icon="mdi-lock"
-						append-icon="mdi-eye-off"
+						:append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
 						@click:append="showPassword = !showPassword"
 					/>
 				</v-form>
