@@ -5,8 +5,19 @@
 	</v-card>
 </template>
 
-<script>
-	export default {
+<script lang="ts">
+	import { defineComponent } from '@vue/composition-api';
+	// export default {
+	// 	name: 'StatisticCard',
+	// 	props: {
+	// 		statistic: {
+	// 			type: Object,
+	// 			required: true,
+	// 		},
+	// 	},
+	// };
+
+	export default defineComponent({
 		name: 'StatisticCard',
 		props: {
 			statistic: {
@@ -14,7 +25,7 @@
 				required: true,
 			},
 		},
-	};
+	});
 </script>
 
 <style></style>

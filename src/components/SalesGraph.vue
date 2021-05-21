@@ -18,8 +18,19 @@
 	</v-card>
 </template>
 
-<script>
-	export default {
+<script lang="ts">
+	import { defineComponent } from '@vue/composition-api';
+	// export default {
+	// 	name: 'SalesGraph',
+	// 	props: {
+	// 		sale: {
+	// 			type: Object,
+	// 			required: true,
+	// 		},
+	// 	},
+	// };
+
+	export default defineComponent({
 		name: 'SalesGraph',
 		props: {
 			sale: {
@@ -27,5 +38,5 @@
 				required: true,
 			},
 		},
-	};
+	});
 </script>

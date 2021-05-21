@@ -21,8 +21,19 @@
 	</v-timeline>
 </template>
 
-<script>
-	export default {
+<script lang="ts">
+	import { defineComponent } from '@vue/composition-api';
+	// export default {
+	// 	name: 'EventTimeline',
+	// 	props: {
+	// 		timeline: {
+	// 			type: Array,
+	// 			required: true,
+	// 		},
+	// 	},
+	// };
+
+	export default defineComponent({
 		name: 'EventTimeline',
 		props: {
 			timeline: {
@@ -30,5 +41,5 @@
 				required: true,
 			},
 		},
-	};
+	});
 </script>
